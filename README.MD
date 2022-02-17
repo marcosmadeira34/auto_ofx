@@ -1,0 +1,1 @@
+Projeto para integração de API de Pagamentos Nexxera utilizando framework Django
