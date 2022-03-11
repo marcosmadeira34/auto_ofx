@@ -10,3 +10,6 @@ class LoginView(TemplateView):
 
 class AppView(TemplateView):
     template_name = 'application.html'
+
+class QueryView(TemplateView):
+    template_name = 'query.html'

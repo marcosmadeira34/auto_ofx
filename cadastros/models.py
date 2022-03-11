@@ -1,4 +1,6 @@
 from django.db import models
+from .functions import consulta_cnpj
+   
 
 # Create your models here.
 class CadastroClientes(models.Model):
@@ -19,6 +21,8 @@ class CadastroClientes(models.Model):
         return "{}({})".format(self.id, self.cnpj_pagador, self.token_house, self.razao_social, 
                               self.conta, self.rua, self.bairro, self.numero, self.complemento, 
                               self.cidade, self.estado, self.cep)            
+
+
 
 class CadastroContas(models.Model):
     BANK_CODE = [
@@ -43,6 +47,4 @@ class CadastroContas(models.Model):
         return "{} ({})".format(self.bank_code, self.agency)
 
 
-
-
-    
+              
